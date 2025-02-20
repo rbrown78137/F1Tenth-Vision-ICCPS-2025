@@ -38,9 +38,9 @@ git clone https://github.com/rbrown78137/F1Tenth-Simulator-ICCPS-2025.git && \
 git clone https://github.com/rbrown78137/F1Tenth-Vision-ICCPS-2025.git && \
 cd F1Tenth-Vision-ICCPS-2025 && cd pose_detection && cd saved_models && \
 wget -O pose.pt \"https://www.dropbox.com/scl/fi/dvqgf611zsafh4oopvsg8/pose.pt?rlkey=80xcbel3blj041ap8zjou2r9a&st=l8vt6nln&dl=1\" && \
-cd .. && cd .. && cd pose_detection && cd saved_models && \
+cd .. && cd .. && cd object_detection && cd saved_models && \
 wget -O yolo.pt \"https://www.dropbox.com/scl/fi/gb6cvw9srt03teo3in6wj/yolo.pt?rlkey=68vvabned8zd08kgi6zut2vl5&st=3snnbocb&dl=1\" && \
-cd .. && cd .. && cd .. && catkin_make"
+cd .. && cd .. && cd .. && cd .. && catkin_make"
 
 RUN echo "export GAZEBO_MODEL_PATH=/home/catkin_ws/src/F1Tenth-Simulator-ICCPS-2025" >> ~/.bashrc
 
