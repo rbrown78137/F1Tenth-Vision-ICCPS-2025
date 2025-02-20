@@ -29,7 +29,7 @@ RUN sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable $(ls
     
 RUN apt install ros-noetic-ackermann-msgs
 
-RUN pip3 install numpy scipy==1.8.0 torch torchvision tqdm matplotlib==3.5.3 matplotlib-inline==0.1.3
+RUN pip3 install numpy scipy==1.8.0 torch==1.10.0+cu113 torchvision==0.11.1+cu113 tqdm matplotlib==3.5.3 matplotlib-inline==0.1.3
 
 RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && cd home && mkdir catkin_ws && cd catkin_ws && mkdir src && cd src && git clone https://github.com/rbrown78137/F1Tenth-Verification-ICCPS-2025.git && git clone https://github.com/rbrown78137/F1Tenth-Simulator-ICCPS-2025.git && git clone https://github.com/rbrown78137/F1Tenth-Vision-ICCPS-2025.git && cd .. && catkin_make"
 
